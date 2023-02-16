@@ -1,0 +1,235 @@
+
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+[data-role=page]{
+	height: 100% 
+	!important; 
+	position:relative 
+	!important;
+}
+[data-role=footer]{
+	bottom:0; 
+	position:absolute 
+	!important; 
+	top: auto !
+	important; width:100%;
+}  
+
+
+#home, #aboutapp, #developers, #instruct, #waitingResults{
+	background-image: url('sources/background.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+.content-text, ul{
+	color: rgba(5,118,92,255);
+	text-align:justify;
+	line-height: 25px;
+	overflow: visible;
+	font-family: 'Lato', sans-serif;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+#home-logo{
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:auto;
+	margin-top:140px;
+
+		
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+
+#buttonContainer {
+	text-align:right;
+	margin-top: 90px;
+	padding-right: 20%;
+}
+#uploadButton {
+	display:inline;
+	width:20%;
+	margin-right:3%;
+}
+
+#camera{
+	display:inline;
+	width: 20%;
+	/* display: block;
+	margin-left: auto;
+	margin-right: 20%;
+	padding-top: 90px; */
+	
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #369082;
+   color: white;
+   text-align: center;
+}
+
+.header {
+	top: 0;
+	position: fixed;
+	text-align: left;
+	background:  #369082;
+	color: white;
+	font-size: 20px;
+	width:100%;
+}
+.navbar-button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.button-txt{
+	text-align:center;
+	color: black;
+}
+
+.page-title{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 28px;
+	font-family: 'Advent Pro', sans-serif;
+	color: #047464;
+	font-weight:bold;
+}	
+.header-text{
+	font-size: 24px;
+	font-family: 'Advent Pro', sans-serif;
+	color:white;
+	margin-left: 5%;
+}
+
+#firstaid .footer {
+	padding:10px;
+	
+}
+.output{
+	line-height: 2;
+	text-indent:10px;
+	font-size: 20px;
+	font-family: 'Advent Pro', sans-serif;
+	color:#047464;
+	background-color: #c7d0d8;
+	box-shadow: 5px 7px #9aa7b2
+	
+}
+.home-button{
+	margin-top:60px;
+}
+*{
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+	flex: 100%;
+	padding:10px;
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 15px;
+	color: white;
+	
+}
+
+.profiles{
+	width: 100%;
+	height: auto;
+}
+#adviser{
+	width: 50%;
+	height: auto;
+	margin-left:90px; 
+
+}
+.name {
+	text-align:center;
+	font-weight: bold;
+	font-family: 'Advent Pro', sans-serif;
+	color: rgba(5,118,92,255);
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+.container {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+	}
+}

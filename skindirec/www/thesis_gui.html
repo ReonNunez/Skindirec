@@ -1,0 +1,189 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<!-- Include the jQuery library -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- Include the jQuery Mobile library -->
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<title>Skin DiRec</title>
+		<script src="script-thesis_gui.js"></script>
+		<link rel="stylesheet" href="css-thesis_gui.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--Homepage-->
+		<div data-role="page" id="home"  >
+			<div data-role="main" class="ui-content" >
+				<img id="home-logo" src="sources/logo.png" > 
+				<button id="aboutapp-button" data-role="button" data-theme="b"> About the Application </button>
+				<button id="dev-button" data-role="button" data-theme="b"> The Developers </button>
+				<button id="instruct-button" data-role="button" data-theme="b"> Instructions </button>
+				<a href="#results"><img id="camera" src="sources/camera.png"></a>
+			</div>
+
+		 
+		</div>
+		<!--About the Application-->
+		<div data-role="page" id="aboutapp">	
+		  <div data-role="main" class="ui-content">
+				<h1 class="page-title">About the Application</h1>
+			     <p class=content-text>
+                    Skin DiRec is an application developed by Electronics Engineering students from De La Salle Lipa.
+					It uses	 image processing and deep transfer learning in identifying common skin diseases. 
+                    The following are the skin diseases that it can identify:<br />
+                    1. Atopic Dermatitis<br />
+                    2. Contact Dermatitis<br />
+                    3. Nummular/ Discoid Eczema<br />
+                    4. Psoriasis<br />
+                    5. Ringworm<br />
+                    <b> Disclaimer:</b> This application does not give final diagnosis.
+                    It is only for the identification of the stated skin diseases. <br/>
+
+                </p>
+				<button class="home-button" data-role="button" data-theme="b"> Homepage </button>
+			</div>	
+		</div>
+		
+		<!--The Developers-->
+		<div data-role="page" id="developers">
+				
+		  <div data-role="main" class="ui-content">
+				<h1 class="page-title">The Developers</h1>
+					<div class="container">
+						<img id="adviser" src="sources/aboutus/maamaileen.jpg">
+						<p class="name"> Engr. Aileen Villamonte </p>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/khent.png">
+								<p class="name"> Khent De Chavez</p>
+									
+							</div>
+						</div>
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/denize.png">
+								<p class="name"> Ma. Denize Esterera</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/frez.jpg">
+								<p class="name"> Frezneal Fallaria </p>
+							</div>
+						</div>
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/josette.jpg">
+								<p class="name"> Josette Kison </p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/jofe.jpg">
+								<p class="name"> Jose Fernando Narvacan</p>
+							</div>
+						</div>
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/reon.jpg">
+								<p class="name"> Reighmonde Eulle Nunez</p>
+							</div>
+						</div>
+					</div>
+				<button class="home-button" data-role="button" data-theme="b"> Homepage </button>
+			</div>	
+		</div>
+		 
+		
+		<!--Intructions-->
+		<div data-role="page" id="instruct">
+			<div data-role="main" class="ui-content">
+				<h1 class="page-title">Instructions</h1>
+					<p class=content-text>
+						1. Select the camera button shown in the Homepage.</br>
+						2. Take a picture or import an image from your device.</br>
+						3. You will have the option to approve the captured image or retake another one. </br>
+						4. Wait for a few seconds while the application processes your image for classification. </br>
+						5. Once finished, the results will be displayed on your screen. </br>
+						6. View the first aid advice and when-to-see a doctor advice to help you with your concern. </br>
+					</p>
+				<button class="home-button" data-role="button" data-theme="b"> Homepage </button>
+			</div>
+
+		</div> 
+		<!--Results-->
+		<div data-role="page" id="results">
+			<div class="header">
+					<div class="row">
+						<div class="column"><h1 class="header-text">>>Results: </h1></div>
+						<div class="column"><h2 class="output">*Insert Output*</h2></div>
+					</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<h1>Show image here</h1>
+			</div>
+				<div class="footer">
+					<div class="row">
+						<div class="column"><a href="#firstaid"><img class="navbar-button" src="sources/first aid icon.png"></a>First Aid</div>
+						<div class="column"><a href="#home"><img class="navbar-button" src="sources/homepage icon.png"></a>Homepage</div>
+					</div>
+				</div><!-- /footer -->
+		</div>
+		<!--First Aid-->
+		<div data-role="page" id="firstaid">
+			<div class="header">
+				<div class="row">
+					<div class="column"><h1 class="header-text">>>Results: </h1></div>
+					<div class="column"><h2 class="output">*Insert Output* </h2></div>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<h1 class="page-title">First Aid: </h1>
+					<p>Show advice here</p>
+			</div>
+			<div class="footer">
+				<div class="row">
+					<div class="column"><a href="#results"><img class="navbar-button" src="sources/back icon.png"></a>Back</div>
+					<div class="column"><a href="#home"><img class="navbar-button" src="sources/homepage icon.png"></a>Homepage</div>
+					<div class="column"><a href="#doctoradvice"><img class="navbar-button" src="sources/next icon.png"></a>Next</div>
+				</div>
+			</div><!-- /footer -->
+		</div>
+		<!--When to see a doctor-->
+		<div data-role="page" id="doctoradvice">
+			<div class="header">
+				<div class="row">
+					<div class="column"><h1 class="header-text">>>Results: </h1></div>
+					<div class="column"><h2 class="output">*Insert Output*</h2></div>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<h1 class="page-title">When To See a Doctor: </h1>
+				<p>Show advice here</p>
+			</div>
+			<div class="footer">
+					<div class="row">
+						<div class="column"><a href="#firstaid"><img class="navbar-button" src="sources/back icon.png"></a>Back</div>
+						<div class="column"><a href="#home"><img class="navbar-button" src="sources/homepage icon.png"></a>Homepage</div>
+					</div>
+			</div><!-- /footer -->
+		</div>
+		</div>
+
+	</body>
+</html>

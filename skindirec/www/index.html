@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'self' 'unsafe-inline'; media-src *; img-src * 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        
+        
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<!-- Include the jQuery library -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- Include the jQuery Mobile library -->
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<title>Skin DiRec</title>
+		<script src="script-thesis_gui.js"></script>
+		<link rel="stylesheet" href="css-thesis_gui.css">
+		<link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <!--Homepage-->
+		<div data-role="page" id="home"  >
+			<div data-role="main" class="ui-content" >
+				<img id="home-logo" src="sources/logo.png" > 
+				<button id="aboutapp-button" data-role="button" data-theme="b"> About the Application </button>
+				<button id="dev-button" data-role="button" data-theme="b"> The Developers </button>
+				<button id="instruct-button" data-role="button" data-theme="b"> Instructions </button>
+				<div id="buttonContainer">
+					<form id="imageSubmitForm" style="display:none;" enctype="multipart/form-data">
+						<input name="fileupload" id="uploadFile" type="file" style="display:none;" accept=".jpg, .jpeg" />
+					</form>
+					<img id="uploadButton" src="img/uploadIcon.png" >
+					<img id="camera" src="sources/camera.png">
+				</div>
+				
+			</div>
+
+		 
+		</div>
+
+		<!--Homepage-->
+		<div data-role="page" id="waitingResults"  >
+			<div data-role="main" class="ui-content" >
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p class="center">Waiting results from the server...</p>
+				<br>
+				<br>
+				<br>
+				<image src="sources/magnify.gif" alt="search" class="center">
+			</div>
+		</div>
+
+
+
+		<!--About the Application-->
+		<div data-role="page" id="aboutapp">	
+		  <div data-role="main" class="ui-content">
+				<h1 class="page-title">About the Application</h1>
+			     <p class=content-text>
+                    Skin DiRec is an application developed by Electronics Engineering students from De La Salle Lipa.
+					It uses	 image processing and deep transfer learning in identifying common skin diseases. 
+                    The following are the skin diseases that it can identify:<br />
+                    1. Atopic Dermatitis<br />
+                    2. Contact Dermatitis<br />
+                    3. Nummular/ Discoid Eczema<br />
+                    4. Psoriasis<br />
+                    5. Ringworm<br />
+                    <b> Disclaimer:</b> This application does not give final diagnosis.
+                    It is only for the identification of the stated skin diseases. <br/>
+
+                </p>
+				<button class="home-button" data-role="button" data-theme="b"> Homepage </button>
+			</div>	
+		</div>
+		
+		<!--The Developers-->
+		<div data-role="page" id="developers">
+				
+		  <div data-role="main" class="ui-content">
+				<h1 class="page-title">The Developers</h1>
+					<div class="container">
+						<img id="adviser" src="sources/aboutus/maamaileen.jpg">
+						<p class="name"> Engr. Aileen Villamonte </p>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/khent.png">
+								<p class="name"> Khent De Chavez</p>
+									
+							</div>
+						</div>
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/denize.png">
+								<p class="name"> Ma. Denize Esterera</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/frez.jpg">
+								<p class="name"> Frezneal Fallaria </p>
+							</div>
+						</div>
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/josette.jpg">
+								<p class="name"> Josette Kison </p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/jofe.jpg">
+								<p class="name"> Jose Fernando Narvacan</p>
+							</div>
+						</div>
+						<div class="column">
+							<div class="container">
+								<img class="profiles" src="sources/aboutus/reon.jpg">
+								<p class="name"> Reighmonde Eulle Nunez</p>
+							</div>
+						</div>
+					</div>
+				<button class="home-button" data-role="button" data-theme="b"> Homepage </button>
+			</div>	
+		</div>
+		 
+		
+		<!--Intructions-->
+		<div data-role="page" id="instruct">
+			<div data-role="main" class="ui-content">
+				<h1 class="page-title">Instructions</h1>
+					<p class=content-text>
+						1. Select the camera button shown in the Homepage.</br>
+						2. Take a picture or import an image from your device.</br>
+						3. You will have the option to approve the captured image or retake another one. </br>
+						4. Wait for a few seconds while the application processes your image for classification. </br>
+						5. Once finished, the results will be displayed on your screen. </br>
+						6. View the first aid advice and when-to-see a doctor advice to help you with your concern. </br>
+						<br>
+						Note:</br> 
+						1. The application only currently supports .jpg and .jpeg files for upload. </br>
+						2. This application uses cordova-android version 9, which only supports Android versions 5.1 and above. </br>
+					</p>
+				<button class="home-button" data-role="button" data-theme="b"> Homepage </button>
+			</div>
+
+		</div> 
+		<!--Results-->
+		<div data-role="page" id="results">
+			<div class="header">
+					<div class="row">
+						<div class="column"><h1 class="header-text">>>Results: </h1></div>
+						<div class="column"><h2 class="output">*Insert Output* </h2></div>
+					</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div style="text-align:center;padding-top:150px;">
+					<img style="width:100%;" id="resultImg" src="">
+				</div>	
+				
+			</div>
+				<div class="footer">
+					<div class="row">
+						<div class="column"><a href="#firstaid"><img class="navbar-button" src="sources/first aid icon.png"></a>First Aid</div>
+						<div class="column"><a href="#home"><img class="navbar-button" src="sources/homepage icon.png"></a>Homepage</div>
+					</div>
+				</div><!-- /footer -->
+		</div>
+		<!--First Aid-->
+		<div data-role="page" id="firstaid">
+			<div class="header">
+				<div class="row">
+					<div class="column"><h1 class="header-text">>>Results: </h1></div>
+					<div class="column"><h2 class="output">*Insert Output* </h2></div>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<br>
+				<br>
+				<h1 class="page-title">First Aid: </h1>
+				<p style="padding-bottom:150px;" class="firstAidAdvice">Show advice here</p>
+			</div>
+			<div class="footer">
+				<div class="row">
+					<div class="column"><a href="#results"><img class="navbar-button" src="sources/back icon.png"></a>Back</div>
+					<div class="column"><a href="#home"><img class="navbar-button" src="sources/homepage icon.png"></a>Homepage</div>
+					<div class="column"><a href="#doctoradvice"><img class="navbar-button" src="sources/next icon.png"></a>Next</div>
+				</div>
+			</div><!-- /footer -->
+		</div>
+		<!--When to see a doctor-->
+		<div data-role="page" id="doctoradvice">
+			<div class="header">
+				<div class="row">
+					<div class="column"><h1 class="header-text">>>Results: </h1></div>
+					<div class="column"><h2 class="output">*Insert Output*</h2></div>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<br>
+				<br>
+				<h1 class="page-title">When To See a Doctor: </h1>
+				<p style="padding-bottom:150px;" class="doctorAdvice">Show advice here</p>
+			</div>
+			<div class="footer">
+					<div class="row">
+						<div class="column"><a href="#firstaid"><img class="navbar-button" src="sources/back icon.png"></a>Back</div>
+						<div class="column"><a href="#home"><img class="navbar-button" src="sources/homepage icon.png"></a>Homepage</div>
+					</div>
+			</div><!-- /footer -->
+		</div>
+		</div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
